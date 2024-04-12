@@ -1,0 +1,280 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex0 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+}
+ 
+.qwerty{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 60em;
+}
+/*Первый блок*/
+header {
+    background: #59a6f3;
+}
+
+.logo {
+    margin-top: 50px;
+    width: 150px;
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.flex11 {
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.flex1_h1 {
+    margin-top: 70px;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+span{
+    font-size: 50px;
+}
+
+.flex1_b {
+    font-size: 80px;
+}
+
+.flex1_h6 {
+    margin-top: 70px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.flex1_a {
+    color: black;
+    background-color: rgb(255,218,22);
+    font-size: 20px;
+    padding: 15px;
+}
+
+.phone{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 462px;
+    animation-name: phone;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/*Второй блок*/
+.h2_flex2 {
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.flex2 {
+     display: flex;
+     justify-content: space-between;
+
+}
+
+.flex20 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_main {
+    width: 100px;
+    text-align: center;
+    margin-top: 25px;
+    height: 90px;
+}
+
+.flex20_p {
+    width: 300px;
+    text-align: center;
+}
+
+.flex20_p:hover {
+    font-size: 20px;
+    background-color: rgb(81, 255, 0);
+}
+
+.flex20_h3 {
+    animation-name: h3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.lab8 {
+    background-color: rgba(24, 202, 233, 0.577);
+    text-align: center;
+    display: flex;
+}
+/*Третий блок*/
+.forms {
+    background-color: rgb(220, 243, 247);
+    text-align: center;
+    display: flex;
+}
+
+.h2_form {
+    margin-top: 100px;
+    padding-top: 100px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+form {
+    font-size: 15px;
+}
+
+form input,
+button {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2px;
+    width: 300px;
+    height: 30px;
+}
+
+button {
+    background-color: rgb(255,218,22);
+    width: 305px;
+    height: 40px;
+    margin-bottom: 100px;
+}
+
+/*Четвертый блок*/
+.end {
+    padding: 50px;
+    color: white;
+    background-color: rgb(37,120,194);
+    text-align: center;
+}
+
+.f:invalid {
+    color: red;
+}
+
+.f:valid {
+    background-image: linear-gradient(rgb(128, 255, 128), rgb(128, 255, 128))
+}
+
+select {
+    width: 306px;
+    height: 35px;
+}
+
+@keyframes logo{
+    0% {
+        background: #59a6f3;
+    }
+    100% {
+        background: white;
+    }
+}
+
+@keyframes phone {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes h3{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: rgb(240, 141, 238);
+    }
+}
+
+
+/*Media запросы CSS для адаптации страницы*/
+
+/* Extra small devices (portrait phones, less than 576px)
+
+No media query for `xs` since this is the default in Bootstrap*/
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media screen and (max-width: 1200px)
+
+{
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+
+@media screen and (max-width: 992px)
+
+{
+    .flex0 {
+        width: 25em;
+        align-items: center;
+    }
+
+    .flex1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex11 {
+        text-align: center;
+    }
+
+    .flex2 {
+        flex-direction: column;
+    }
+    
+    .phone{
+        width: 300px;
+    }
+
+    .qwerty{
+        width: 25em;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media screen and (max-width: 768px)
+
+{
+    
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media screen and (max-width: 576px)
+
+{
+
+}
